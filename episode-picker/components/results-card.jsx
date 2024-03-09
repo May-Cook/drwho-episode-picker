@@ -12,7 +12,7 @@ export default function ResultsCard() {
 
       <button
         onClick={() => {
-          SetEpisode(episodes[Math.floor(Math.random() * episodes.length)]) // chooses a new episode at random
+          SetEpisode(episodes[Math.floor(Math.random() * episodes.length)]) // choose a new episode at random
         }}
       >
         Pick new episode
