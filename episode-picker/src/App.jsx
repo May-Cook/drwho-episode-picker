@@ -5,7 +5,7 @@ function App() {
   return (
     <>
       <div>
-        <h1>Doctor Who Episode Picker</h1>
+        <h1 className="title">Doctor Who Episode Picker</h1>
         <ResultsCard />
       </div>
     </>
