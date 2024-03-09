@@ -6,7 +6,7 @@ export default function ResultsCard() {
 
   return (
     <div className="results-card">
-      <a href={episode.link}>{episode.title}</a>
+      <a href={episode.link} className="episodeTitle">{episode.title}</a>
       <p>Series: {episode.series}, Episode: {episode.episode}</p>
       <p>{episode.doctor}th Doctor</p>
 
