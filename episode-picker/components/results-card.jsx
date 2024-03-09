@@ -2,7 +2,7 @@ import { useState } from "react"
 import episodes from "../src/episodes.json"
 
 export default function ResultsCard() {
-  const [episode, SetEpisode] = useState(episodes[0])
+  const [episode, SetEpisode] = useState(episodes[Math.floor(Math.random() * episodes.length)]) // initialise episode as a random episode
 
   return (
     <div className="results-card">
