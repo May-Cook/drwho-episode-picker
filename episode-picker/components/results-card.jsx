@@ -1,15 +1,16 @@
 import { useState } from "react"
+import episodes from "../src/episodes.json"
 
 export default function ResultsCard() {
-  const [episode, SetEpisode] = useState(1)
+  const [episode, SetEpisode] = useState(episodes[0])
 
   return (
     <div className="results-card">
-      <p>Episode: Episode {episode} of death</p>
-      <p>Link: https://episode{episode}.com </p>
+      <p>Episode: {episode.title}</p>
+      <p>Link: {episode.link}</p>
       <button
         onClick={() => {
-          SetEpisode(Math.floor(Math.random() * 10)) // Sets the episode to a random integer from 0-10 inclusive
+          SetEpisode(episodes[Math.floor(Math.random() * episodes.length)]) // chooses a new episode at random
         }}
       >
         Pick new episode
