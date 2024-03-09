@@ -6,8 +6,10 @@ export default function ResultsCard() {
 
   return (
     <div className="results-card">
-      <p>Episode: {episode.title}</p>
-      <p>Link: {episode.link}</p>
+      <a href={episode.link}>{episode.title}</a>
+      <p>Series: {episode.series}, Episode: {episode.episode}</p>
+      <p>{episode.doctor}th Doctor</p>
+
       <button
         onClick={() => {
           SetEpisode(episodes[Math.floor(Math.random() * episodes.length)]) // chooses a new episode at random
