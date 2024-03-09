@@ -3,6 +3,7 @@ export default function ResultsCard() {
     <div className="results-card">
       <p>Episode: Placeholder of death</p>
       <p>Link: https://Placeholder.com </p>
+      <button>Pick new episode</button>
     </div>
   )
 }
