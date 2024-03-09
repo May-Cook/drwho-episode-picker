@@ -60,16 +60,33 @@ button:focus-visible {
 }
 
 .title {
-  animation: titleFade 5s infinite;
+  color: rgba(255, 200, 0, 1);
+}
+.titleFade {
+  animation: titleFade 15s infinite;
 }
 
 @keyframes titleFade {
+  /* Animation intended to look like the TARDIS dematerialising*/
   0% {
     color: rgba(255, 200, 0, 1);
   }
-  50% {
-    color: rgba(255, 200, 0, 0.7);
+
+  40% {
+    color: rgba(255, 200, 0, 1);
   }
+
+  70% {
+    color: rgba(255, 200, 0, 0.05);
+  }
+  80% {
+    color: rgba(255, 200, 0, 0);
+  }
+
+  90% {
+    color: rgba(255, 200, 0, 1);
+  }
+
   100% {
     color: rgba(255, 200, 0, 1);
   }
