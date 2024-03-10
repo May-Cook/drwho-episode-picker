@@ -1223,6 +1223,34 @@
         "title": "The Power of the Doctor",
         "doctor": 13,
         "link": "https://www.bbc.co.uk/iplayer/episode/m001dhsb/doctor-who-the-power-of-the-doctor"
+    },
+    {
+        "series": 14,
+        "episode": 1,
+        "title": "The Star Beast",
+        "doctor": 14,
+        "link": "https://www.bbc.co.uk/iplayer/episode/m001sx3h/doctor-who-2023-the-star-beast"
+    },
+    {
+        "series": 14,
+        "episode": 2,
+        "title": "Wild Blue Yonder",
+        "doctor": 14,
+        "link": "https://www.bbc.co.uk/iplayer/episode/m001t42d/doctor-who-2023-wild-blue-yonder"
+    },
+    {
+        "series": 14,
+        "episode": 3,
+        "title": "The Giggle",
+        "doctor": 14,
+        "link": "https://www.bbc.co.uk/iplayer/episode/m001tc3r/doctor-who-2023-the-giggle"
+    },
+    {
+        "series": 14,
+        "episode": 4,
+        "title": "The Church on Ruby Road",
+        "doctor": 1,
+        "link": "https://www.bbc.co.uk/iplayer/episode/m001tfnl/doctor-who-2023-christmas-special-the-church-on-ruby-road"
     }
 
 ]
