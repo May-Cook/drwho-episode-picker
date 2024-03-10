@@ -59,8 +59,9 @@ button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
-.episodeTitle{
+.episodeTitle {
   font-size: 1.5rem;
+  font-family: "DrKabel";
 }
 
 .title {
@@ -99,5 +100,5 @@ button:focus-visible {
 
 @font-face {
   font-family: "DrKabel";
-  src: local("DrKabel"), url(./assets/DrKabel-pvvD.otf), format("otf");
+  src: url(./assets/DrKabel-pvvD.otf), format("otf");
 }
