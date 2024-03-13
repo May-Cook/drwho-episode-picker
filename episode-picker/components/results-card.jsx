@@ -1,10 +1,30 @@
-import { useState } from "react"
+import { useReducer, useState } from "react"
 import episodes from "../src/episodes.json"
+
+function CheckboxReducer(state, action){
+  switch(action.type){
+    case "nine":
+      return{
+        nine: !state.nine,
+        ten: state.ten
+      }
+    case "ten":
+      return{
+        nine: state.nine,
+        ten: !state.ten
+      }
+    default:
+      throw new Error("Invalid Action");
+  }
+}
+
 
 export default function ResultsCard() {
   const [episode, SetEpisode] = useState(
     episodes[Math.floor(Math.random() * episodes.length)]
   ) // initialise episode as a random episode
+
+  const[checkboxState, dispatch] = useReducer(CheckboxReducer, {nine: true, ten: true})
 
   return (
     <div className="results-card">
@@ -13,6 +33,7 @@ export default function ResultsCard() {
       </a>
       <p>
         Series: {episode.series}, Episode: {episode.episode}
+        Nine: {checkboxState.nine.toString()}, Ten: {checkboxState.ten.toString()}
       </p>
       <p>{episode.doctor}th Doctor</p>
 
@@ -24,13 +45,14 @@ export default function ResultsCard() {
         Pick new episode
       </button>
       <div>
-        <input type="checkbox" name="9th doc" value="9" defaultChecked="true" />{" "}
+        <input type="checkbox" name="9th doc" value="9" defaultChecked="true" onClick={() => dispatch({type: "nine"})}/>{" "}
         9th Doctor 
         <input
           type="checkbox"
           name="10th doc"
           value="10"
           defaultChecked="true"
+          onClick={() => dispatch({type: "ten"})}
         />
         10th Doctor
         <input
