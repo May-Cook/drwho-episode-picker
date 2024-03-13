@@ -68,13 +68,9 @@ export default function ResultsCard() {
         {episode.title}
       </a>
       <p>
-        Series: {episode.series}, Episode: {episode.episode}, Checkboxes:{" "}
-        {checkboxState.nine.toString()} ,{checkboxState.ten.toString()},
-        {checkboxState.eleven.toString()},{checkboxState.twelve.toString()},
-        {checkboxState.thirteen.toString()},{checkboxState.fourteen.toString()},
-        {checkboxState.fifteen.toString()},
+        Series: {episode.series}, Episode: {episode.episode}
       </p>
-      <p>{episode.doctor}th Doctor</p>
+      <p>{episode.doctor}th Doctor, {episode.era} era</p>
 
       <button
         onClick={() => {
