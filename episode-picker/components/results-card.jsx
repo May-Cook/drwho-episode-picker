@@ -70,7 +70,9 @@ export default function ResultsCard() {
       <p>
         Series: {episode.series}, Episode: {episode.episode}
       </p>
-      <p>{episode.doctor}th Doctor, {episode.era} era</p>
+      <p>
+        {episode.doctor}th Doctor, {episode.era} era
+      </p>
 
       <button
         onClick={() => {
@@ -79,6 +81,17 @@ export default function ResultsCard() {
           while (!validEpisode) {
             episode = episodes[Math.floor(Math.random() * episodes.length)]
             if (VerifyEpisode(episode, checkboxState)) {
+              validEpisode = true
+            }
+            if (
+              checkboxState.nine == false &&
+              checkboxState.ten == false &&
+              checkboxState.eleven == false &&
+              checkboxState.twelve == false &&
+              checkboxState.thirteen == false &&
+              checkboxState.fourteen == false &&
+              checkboxState.fifteen == false
+            ) {
               validEpisode = true
             }
           }
