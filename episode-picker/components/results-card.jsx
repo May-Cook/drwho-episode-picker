@@ -22,6 +22,31 @@ function CheckboxReducer(state, action) {
   }
 }
 
+function VerifyEpisode(episode, checkboxState) {
+  // returns true if the episode meets the requiremments
+  switch (episode.doctor) {
+    case 8:
+      return false
+    case 9:
+      return checkboxState.nine
+    case 10:
+      return checkboxState.ten
+    case 11:
+      return checkboxState.eleven
+    case 12:
+      return checkboxState.twelve
+    case 13:
+      return checkboxState.thirteen
+    case 14:
+      return checkboxState.fourteen
+    case 15:
+      return checkboxState.fifteen
+    default:
+      throw new Error("Invalid value for episode.doctor")
+  }
+  return validEpisode
+}
+
 export default function ResultsCard() {
   const [episode, SetEpisode] = useState(
     episodes[Math.floor(Math.random() * episodes.length)]
@@ -53,7 +78,15 @@ export default function ResultsCard() {
 
       <button
         onClick={() => {
-          SetEpisode(episodes[Math.floor(Math.random() * episodes.length)]) // choose a new episode at random
+          let validEpisode = false
+          let episode = episodes[1]
+          while (!validEpisode) {
+            episode = episodes[Math.floor(Math.random() * episodes.length)]
+            if (VerifyEpisode(episode, checkboxState)) {
+              validEpisode = true
+            }
+          }
+          SetEpisode(episode)
         }}
       >
         Pick new episode
