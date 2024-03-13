@@ -110,7 +110,7 @@ export default function ResultsCard() {
         10th Doctor
         <input
           type="checkbox"
-          name="10th doc"
+          name="11th doc"
           value="11"
           defaultChecked="true"
           onClick={() => dispatch({ type: "11" })}
@@ -118,7 +118,7 @@ export default function ResultsCard() {
         11th Doctor
         <input
           type="checkbox"
-          name="11th doc"
+          name="12th doc"
           value="12"
           defaultChecked="true"
           onClick={() => dispatch({ type: "12" })}
@@ -126,7 +126,7 @@ export default function ResultsCard() {
         12th Doctor
         <input
           type="checkbox"
-          name="12th doc"
+          name="13th doc"
           value="13"
           defaultChecked="true"
           onClick={() => dispatch({ type: "13" })}
@@ -134,7 +134,7 @@ export default function ResultsCard() {
         13th Doctor
         <input
           type="checkbox"
-          name="13th doc"
+          name="14th doc"
           value="14"
           defaultChecked="true"
           onClick={() => dispatch({ type: "14" })}
@@ -142,7 +142,7 @@ export default function ResultsCard() {
         14th Doctor
         <input
           type="checkbox"
-          name="14th doc"
+          name="15th doc"
           value="15"
           defaultChecked="true"
           onClick={() => dispatch({ type: "15" })}
