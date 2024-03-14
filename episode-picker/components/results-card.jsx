@@ -96,26 +96,26 @@ export default function ResultsCard() {
 
       <button
         onClick={() => {
-          let validEpisode = false
-          let episode = episodes[1]
-          while (!validEpisode) {
-            episode = episodes[Math.floor(Math.random() * episodes.length)]
-            if (VerifyEpisode(episode, checkboxState)) {
-              validEpisode = true
+          if (
+            checkboxState.nine == true ||
+            checkboxState.ten == true ||
+            checkboxState.eleven == true ||
+            checkboxState.twelve == true ||
+            checkboxState.thirteen == true ||
+            checkboxState.fourteen == true ||
+            checkboxState.fifteen == true
+          ) {
+            //  if at least one checkbox is checked
+            let validEpisode = false
+            let episode = episodes[1]
+            while (!validEpisode) {
+              episode = episodes[Math.floor(Math.random() * episodes.length)] // pick a new episode at random
+              if (VerifyEpisode(episode, checkboxState)) {
+                validEpisode = true
+              }
             }
-            if (
-              checkboxState.nine == false &&
-              checkboxState.ten == false &&
-              checkboxState.eleven == false &&
-              checkboxState.twelve == false &&
-              checkboxState.thirteen == false &&
-              checkboxState.fourteen == false &&
-              checkboxState.fifteen == false
-            ) {
-              validEpisode = true
-            }
+            SetEpisode(episode)
           }
-          SetEpisode(episode)
         }}
       >
         Pick new episode
