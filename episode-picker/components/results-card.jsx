@@ -101,7 +101,10 @@ export default function ResultsCard() {
         Pick new episode
       </button>
       <div>
-        <button class="checkboxButton" onClick={() => dispatch({ type: "9" })}>
+        <button
+          className="checkboxButton"
+          onClick={() => dispatch({ type: "9" })}
+        >
           <input
             type="checkbox"
             name="9th doc"
@@ -111,67 +114,79 @@ export default function ResultsCard() {
           />{" "}
           9th Doctor
         </button>
-        <button class="checkboxButton" onClick={() => dispatch({ type: "10" })}>
+        <button
+          className="checkboxButton"
+          onClick={() => dispatch({ type: "10" })}
+        >
           <input
             type="checkbox"
             name="10th doc"
             value="10"
-            defaultChecked="true"
             readOnly
             checked={checkboxState.ten}
           />
           10th Doctor
         </button>
-        <button class="checkboxButton" onClick={() => dispatch({ type: "11" })}>
+        <button
+          className="checkboxButton"
+          onClick={() => dispatch({ type: "11" })}
+        >
           <input
             type="checkbox"
             name="11th doc"
             value="11"
-            defaultChecked="true"
             readOnly
             checked={checkboxState.eleven}
           />
           11th Doctor
         </button>
-        <button class="checkboxButton" onClick={() => dispatch({ type: "12" })}>
+        <button
+          className="checkboxButton"
+          onClick={() => dispatch({ type: "12" })}
+        >
           <input
             type="checkbox"
             name="12th doc"
             value="12"
-            defaultChecked="true"
             readOnly
             checked={checkboxState.twelve}
           />
           12th Doctor
         </button>
-        <button class="checkboxButton" onClick={() => dispatch({ type: "13" })}>
+        <button
+          className="checkboxButton"
+          onClick={() => dispatch({ type: "13" })}
+        >
           <input
             type="checkbox"
             name="13th doc"
             value="13"
-            defaultChecked="true"
             readOnly
             checked={checkboxState.thirteen}
           />
           13th Doctor
         </button>
-        <button class="checkboxButton" onClick={() => dispatch({ type: "14" })}>
+        <button
+          className="checkboxButton"
+          onClick={() => dispatch({ type: "14" })}
+        >
           <input
             type="checkbox"
             name="14th doc"
             value="14"
-            defaultChecked="true"
             readOnly
             checked={checkboxState.fourteen}
           />
           14th Doctor
         </button>
-        <button class="checkboxButton" onClick={() => dispatch({ type: "15" })}>
+        <button
+          className="checkboxButton"
+          onClick={() => dispatch({ type: "15" })}
+        >
           <input
             type="checkbox"
             name="15th doc"
             value="15"
-            defaultChecked="true"
             readOnly
             checked={checkboxState.fifteen}
           />
