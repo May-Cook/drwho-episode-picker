@@ -94,7 +94,7 @@ export default function ResultsCard() {
         {episode.doctor}th Doctor, {episode.era} era
       </p>
 
-      <button
+      <button className="unselectable"
         onClick={() => {
           if (
             checkboxState.nine == true ||
@@ -122,7 +122,7 @@ export default function ResultsCard() {
       </button>
       <div className="filterButtonGroup">
         <button
-          className="filterButton"
+          className="filterButton unselectable" 
           onClick={() => dispatch({ type: "9" })}
         >
           <input
@@ -135,7 +135,7 @@ export default function ResultsCard() {
           9th Doctor
         </button>
         <button
-          className="filterButton"
+          className="filterButton unselectable"
           onClick={() => dispatch({ type: "10" })}
         >
           <input
@@ -148,7 +148,7 @@ export default function ResultsCard() {
           10th Doctor
         </button>
         <button
-          className="filterButton"
+          className="filterButton unselectable"
           onClick={() => dispatch({ type: "11" })}
         >
           <input
@@ -161,7 +161,7 @@ export default function ResultsCard() {
           11th Doctor
         </button>
         <button
-          className="filterButton"
+          className="filterButton unselectable"
           onClick={() => dispatch({ type: "12" })}
         >
           <input
@@ -174,7 +174,7 @@ export default function ResultsCard() {
           12th Doctor
         </button>
         <button
-          className="filterButton"
+          className="filterButton unselectable"
           onClick={() => dispatch({ type: "13" })}
         >
           <input
@@ -187,7 +187,7 @@ export default function ResultsCard() {
           13th Doctor
         </button>
         <button
-          className="filterButton"
+          className="filterButton unselectable"
           onClick={() => dispatch({ type: "14" })}
         >
           <input
@@ -200,7 +200,7 @@ export default function ResultsCard() {
           14th Doctor
         </button>
         <button
-          className="filterButton"
+          className="filterButton unselectable"
           onClick={() => dispatch({ type: "15" })}
         >
           <input
@@ -216,7 +216,7 @@ export default function ResultsCard() {
       <div>
         <div className="selectorButtonGroup">
           <button
-            className="selectorButton"
+            className="selectorButton unselectable"
             onClick={() => {
               dispatch({ type: "selectAll" })
             }}
@@ -224,7 +224,7 @@ export default function ResultsCard() {
             Select All
           </button>
           <button
-            className="selectorButton"
+            className="selectorButton unselectable"
             onClick={() => {
               dispatch({ type: "deselectAll" })
             }}
