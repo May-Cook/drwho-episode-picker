@@ -108,7 +108,6 @@ export default function ResultsCard() {
             value="9"
             readOnly
             checked={checkboxState.nine}
-            onClick={() => dispatch({ type: "9" })}
           />{" "}
           9th Doctor
         </button>
@@ -120,7 +119,6 @@ export default function ResultsCard() {
             defaultChecked="true"
             readOnly
             checked={checkboxState.ten}
-            onClick={() => dispatch({ type: "10" })}
           />
           10th Doctor
         </button>
@@ -132,7 +130,6 @@ export default function ResultsCard() {
             defaultChecked="true"
             readOnly
             checked={checkboxState.eleven}
-            onClick={() => dispatch({ type: "11" })}
           />
           11th Doctor
         </button>
@@ -144,7 +141,6 @@ export default function ResultsCard() {
             defaultChecked="true"
             readOnly
             checked={checkboxState.twelve}
-            onClick={() => dispatch({ type: "12" })}
           />
           12th Doctor
         </button>
@@ -156,7 +152,6 @@ export default function ResultsCard() {
             defaultChecked="true"
             readOnly
             checked={checkboxState.thirteen}
-            onClick={() => dispatch({ type: "13" })}
           />
           13th Doctor
         </button>
@@ -168,7 +163,6 @@ export default function ResultsCard() {
             defaultChecked="true"
             readOnly
             checked={checkboxState.fourteen}
-            onClick={() => dispatch({ type: "14" })}
           />
           14th Doctor
         </button>
@@ -180,7 +174,6 @@ export default function ResultsCard() {
             defaultChecked="true"
             readOnly
             checked={checkboxState.fifteen}
-            onClick={() => dispatch({ type: "15" })}
           />
           15th Doctor
         </button>
