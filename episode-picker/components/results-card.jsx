@@ -101,62 +101,89 @@ export default function ResultsCard() {
         Pick new episode
       </button>
       <div>
-        <input
-          type="checkbox"
-          name="9th doc"
-          value="9"
-          defaultChecked="true"
-          onClick={() => dispatch({ type: "9" })}
-        />{" "}
-        9th Doctor
-        <input
-          type="checkbox"
-          name="10th doc"
-          value="10"
-          defaultChecked="true"
-          onClick={() => dispatch({ type: "10" })}
-        />
-        10th Doctor
-        <input
-          type="checkbox"
-          name="11th doc"
-          value="11"
-          defaultChecked="true"
-          onClick={() => dispatch({ type: "11" })}
-        />
-        11th Doctor
-        <input
-          type="checkbox"
-          name="12th doc"
-          value="12"
-          defaultChecked="true"
-          onClick={() => dispatch({ type: "12" })}
-        />
-        12th Doctor
-        <input
-          type="checkbox"
-          name="13th doc"
-          value="13"
-          defaultChecked="true"
-          onClick={() => dispatch({ type: "13" })}
-        />
-        13th Doctor
-        <input
-          type="checkbox"
-          name="14th doc"
-          value="14"
-          defaultChecked="true"
-          onClick={() => dispatch({ type: "14" })}
-        />
-        14th Doctor
-        <input
-          type="checkbox"
-          name="15th doc"
-          value="15"
-          defaultChecked="true"
-          onClick={() => dispatch({ type: "15" })}
-        />
-        15th Doctor
+        <button onClick={() => dispatch({ type: "9" })}>
+          <input
+            type="checkbox"
+            name="9th doc"
+            value="9"
+            readOnly
+            checked={checkboxState.nine}
+            onClick={() => dispatch({ type: "9" })}
+          />{" "}
+          9th Doctor
+        </button>
+        <button onClick={() => dispatch({ type: "10" })}>
+          <input
+            type="checkbox"
+            name="10th doc"
+            value="10"
+            defaultChecked="true"
+            readOnly
+            checked={checkboxState.ten}
+            onClick={() => dispatch({ type: "10" })}
+          />
+          10th Doctor
+        </button>
+        <button onClick={() => dispatch({ type: "11" })}>
+          <input
+            type="checkbox"
+            name="11th doc"
+            value="11"
+            defaultChecked="true"
+            readOnly
+            checked={checkboxState.eleven}
+            onClick={() => dispatch({ type: "11" })}
+          />
+          11th Doctor
+        </button>
+        <button onClick={() => dispatch({ type: "12" })}>
+          <input
+            type="checkbox"
+            name="12th doc"
+            value="12"
+            defaultChecked="true"
+            readOnly
+            checked={checkboxState.twelve}
+            onClick={() => dispatch({ type: "12" })}
+          />
+          12th Doctor
+        </button>
+        <button onClick={() => dispatch({ type: "13" })}>
+          <input
+            type="checkbox"
+            name="13th doc"
+            value="13"
+            defaultChecked="true"
+            readOnly
+            checked={checkboxState.thirteen}
+            onClick={() => dispatch({ type: "13" })}
+          />
+          13th Doctor
+        </button>
+        <button onClick={() => dispatch({ type: "14" })}>
+          <input
+            type="checkbox"
+            name="14th doc"
+            value="14"
+            defaultChecked="true"
+            readOnly
+            checked={checkboxState.fourteen}
+            onClick={() => dispatch({ type: "14" })}
+          />
+          14th Doctor
+        </button>
+        <button onClick={() => dispatch({ type: "15" })}>
+          <input
+            type="checkbox"
+            name="15th doc"
+            value="15"
+            defaultChecked="true"
+            readOnly
+            checked={checkboxState.fifteen}
+            onClick={() => dispatch({ type: "15" })}
+          />
+          15th Doctor
+        </button>
       </div>
     </div>
   )
