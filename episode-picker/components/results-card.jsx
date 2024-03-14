@@ -17,6 +17,26 @@ function CheckboxReducer(state, action) {
       return { ...state, fourteen: !state.fourteen }
     case "15":
       return { ...state, fifteen: !state.fifteen }
+    case "selectAll":
+      return {
+        nine: true,
+        ten: true,
+        eleven: true,
+        twelve: true,
+        thirteen: true,
+        fourteen: true,
+        fifteen: true,
+      }
+    case "deselectAll":
+      return {
+        nine: false,
+        ten: false,
+        eleven: false,
+        twelve: false,
+        thirteen: false,
+        fourteen: false,
+        fifteen: false,
+      }
     default:
       throw new Error("Invalid Action")
   }
@@ -194,8 +214,22 @@ export default function ResultsCard() {
         </button>
       </div>
       <div>
-        <button className="selectorButton">Select All</button>
-        <button className="selectorButton">Deselect All</button>
+        <button
+          className="selectorButton"
+          onClick={() => {
+            dispatch({ type: "selectAll" })
+          }}
+        >
+          Select All
+        </button>
+        <button
+          className="selectorButton"
+          onClick={() => {
+            dispatch({ type: "deselectAll" })
+          }}
+        >
+          Deselect All
+        </button>
       </div>
     </div>
   )
