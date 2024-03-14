@@ -94,7 +94,8 @@ export default function ResultsCard() {
         {episode.doctor}th Doctor, {episode.era} era
       </p>
 
-      <button className="unselectable"
+      <button
+        className="unselectable"
         onClick={() => {
           if (
             checkboxState.nine == true ||
@@ -120,117 +121,121 @@ export default function ResultsCard() {
       >
         Pick new episode
       </button>
-      <div className="filterButtonGroup">
-        <button
-          className="filterButton unselectable" 
-          onClick={() => dispatch({ type: "9" })}
-        >
-          <input
-            type="checkbox"
-            name="9th doc"
-            value="9"
-            readOnly
-            checked={checkboxState.nine}
-          />{" "}
-          9th Doctor
-        </button>
-        <button
-          className="filterButton unselectable"
-          onClick={() => dispatch({ type: "10" })}
-        >
-          <input
-            type="checkbox"
-            name="10th doc"
-            value="10"
-            readOnly
-            checked={checkboxState.ten}
-          />
-          10th Doctor
-        </button>
-        <button
-          className="filterButton unselectable"
-          onClick={() => dispatch({ type: "11" })}
-        >
-          <input
-            type="checkbox"
-            name="11th doc"
-            value="11"
-            readOnly
-            checked={checkboxState.eleven}
-          />
-          11th Doctor
-        </button>
-        <button
-          className="filterButton unselectable"
-          onClick={() => dispatch({ type: "12" })}
-        >
-          <input
-            type="checkbox"
-            name="12th doc"
-            value="12"
-            readOnly
-            checked={checkboxState.twelve}
-          />
-          12th Doctor
-        </button>
-        <button
-          className="filterButton unselectable"
-          onClick={() => dispatch({ type: "13" })}
-        >
-          <input
-            type="checkbox"
-            name="13th doc"
-            value="13"
-            readOnly
-            checked={checkboxState.thirteen}
-          />
-          13th Doctor
-        </button>
-        <button
-          className="filterButton unselectable"
-          onClick={() => dispatch({ type: "14" })}
-        >
-          <input
-            type="checkbox"
-            name="14th doc"
-            value="14"
-            readOnly
-            checked={checkboxState.fourteen}
-          />
-          14th Doctor
-        </button>
-        <button
-          className="filterButton unselectable"
-          onClick={() => dispatch({ type: "15" })}
-        >
-          <input
-            type="checkbox"
-            name="15th doc"
-            value="15"
-            readOnly
-            checked={checkboxState.fifteen}
-          />
-          15th Doctor
-        </button>
-      </div>
-      <div>
-        <div className="selectorButtonGroup">
+
+      <div id="filterContainer">
+        <span className="subtitle">Filter by Doctor: </span>
+        <div className="filterButtonGroup">
           <button
-            className="selectorButton unselectable"
-            onClick={() => {
-              dispatch({ type: "selectAll" })
-            }}
+            className="filterButton unselectable"
+            onClick={() => dispatch({ type: "9" })}
           >
-            Select All
+            <input
+              type="checkbox"
+              name="9th doc"
+              value="9"
+              readOnly
+              checked={checkboxState.nine}
+            />{" "}
+            9th
           </button>
           <button
-            className="selectorButton unselectable"
-            onClick={() => {
-              dispatch({ type: "deselectAll" })
-            }}
+            className="filterButton unselectable"
+            onClick={() => dispatch({ type: "10" })}
           >
-            Deselect All
+            <input
+              type="checkbox"
+              name="10th doc"
+              value="10"
+              readOnly
+              checked={checkboxState.ten}
+            />
+            10th
           </button>
+          <button
+            className="filterButton unselectable"
+            onClick={() => dispatch({ type: "11" })}
+          >
+            <input
+              type="checkbox"
+              name="11th doc"
+              value="11"
+              readOnly
+              checked={checkboxState.eleven}
+            />
+            11th
+          </button>
+          <button
+            className="filterButton unselectable"
+            onClick={() => dispatch({ type: "12" })}
+          >
+            <input
+              type="checkbox"
+              name="12th doc"
+              value="12"
+              readOnly
+              checked={checkboxState.twelve}
+            />
+            12th
+          </button>
+          <button
+            className="filterButton unselectable"
+            onClick={() => dispatch({ type: "13" })}
+          >
+            <input
+              type="checkbox"
+              name="13th doc"
+              value="13"
+              readOnly
+              checked={checkboxState.thirteen}
+            />
+            13th
+          </button>
+          <button
+            className="filterButton unselectable"
+            onClick={() => dispatch({ type: "14" })}
+          >
+            <input
+              type="checkbox"
+              name="14th doc"
+              value="14"
+              readOnly
+              checked={checkboxState.fourteen}
+            />
+            14th
+          </button>
+          <button
+            className="filterButton unselectable"
+            onClick={() => dispatch({ type: "15" })}
+          >
+            <input
+              type="checkbox"
+              name="15th doc"
+              value="15"
+              readOnly
+              checked={checkboxState.fifteen}
+            />
+            15th
+          </button>
+        </div>
+        <div>
+          <div className="selectorButtonGroup">
+            <button
+              className="selectorButton unselectable"
+              onClick={() => {
+                dispatch({ type: "selectAll" })
+              }}
+            >
+              Select All
+            </button>
+            <button
+              className="selectorButton unselectable"
+              onClick={() => {
+                dispatch({ type: "deselectAll" })
+              }}
+            >
+              Deselect All
+            </button>
+          </div>
         </div>
       </div>
     </div>

@@ -7,9 +7,9 @@
   color: rgba(255, 255, 255, 0.87);
   background: linear-gradient(
     180deg,
-    /* rgb(0, 70, 160) 1%, */
-    rgb(0, 60, 150) 1%,
-    rgb(0, 50, 125), 50%,
+    /* rgb(0, 70, 160) 1%, */ rgb(0, 60, 150) 1%,
+    rgb(0, 50, 125),
+    50%,
     rgb(0, 30, 75) 80%,
     rgb(0, 20, 50) 100%
   );
@@ -84,11 +84,27 @@ input[type="checkbox"] {
   animation: titleFade 15s infinite;
 }
 
+.subtitle{
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+
 .filterButton {
   padding: 2px;
   padding-right: 6px;
   margin: 3px;
   border-radius: 0.4rem;
+}
+
+#filterContainer {
+  margin-top: 1rem;
+  padding-top: 0.5rem;
+  border-width: 1.5px;
+
+  border-radius: 1rem;
+  border-style: solid;
+  border-color: rgb(235, 150, 10);
+  background: linear-gradient(1deg, rgb(10, 20, 50, 0.4) 0%, rgb(20, 40, 100, 0.4));
 }
 
 .filterButtonGroup {
