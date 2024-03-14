@@ -75,6 +75,14 @@ button:hover {
   border-radius: 0.4rem;
 }
 
+.selectorButton {
+  padding: 3px;
+  padding-right: 6px;
+  padding-left: 6px;
+  margin: 1px;
+  border-radius: 0.4rem;
+}
+
 @keyframes titleFade {
   /* Animation intended to look like the TARDIS dematerialising*/
   0% {

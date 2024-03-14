@@ -193,6 +193,10 @@ export default function ResultsCard() {
           15th Doctor
         </button>
       </div>
+      <div>
+        <button className="selectorButton">Select All</button>
+        <button className="selectorButton">Deselect All</button>
+      </div>
     </div>
   )
 }
