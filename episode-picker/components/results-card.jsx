@@ -101,7 +101,7 @@ export default function ResultsCard() {
         Pick new episode
       </button>
       <div>
-        <button onClick={() => dispatch({ type: "9" })}>
+        <button class="checkboxButton" onClick={() => dispatch({ type: "9" })}>
           <input
             type="checkbox"
             name="9th doc"
@@ -111,7 +111,7 @@ export default function ResultsCard() {
           />{" "}
           9th Doctor
         </button>
-        <button onClick={() => dispatch({ type: "10" })}>
+        <button class="checkboxButton" onClick={() => dispatch({ type: "10" })}>
           <input
             type="checkbox"
             name="10th doc"
@@ -122,7 +122,7 @@ export default function ResultsCard() {
           />
           10th Doctor
         </button>
-        <button onClick={() => dispatch({ type: "11" })}>
+        <button class="checkboxButton" onClick={() => dispatch({ type: "11" })}>
           <input
             type="checkbox"
             name="11th doc"
@@ -133,7 +133,7 @@ export default function ResultsCard() {
           />
           11th Doctor
         </button>
-        <button onClick={() => dispatch({ type: "12" })}>
+        <button class="checkboxButton" onClick={() => dispatch({ type: "12" })}>
           <input
             type="checkbox"
             name="12th doc"
@@ -144,7 +144,7 @@ export default function ResultsCard() {
           />
           12th Doctor
         </button>
-        <button onClick={() => dispatch({ type: "13" })}>
+        <button class="checkboxButton" onClick={() => dispatch({ type: "13" })}>
           <input
             type="checkbox"
             name="13th doc"
@@ -155,7 +155,7 @@ export default function ResultsCard() {
           />
           13th Doctor
         </button>
-        <button onClick={() => dispatch({ type: "14" })}>
+        <button class="checkboxButton" onClick={() => dispatch({ type: "14" })}>
           <input
             type="checkbox"
             name="14th doc"
@@ -166,7 +166,7 @@ export default function ResultsCard() {
           />
           14th Doctor
         </button>
-        <button onClick={() => dispatch({ type: "15" })}>
+        <button class="checkboxButton" onClick={() => dispatch({ type: "15" })}>
           <input
             type="checkbox"
             name="15th doc"
