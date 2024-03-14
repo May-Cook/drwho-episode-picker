@@ -68,19 +68,28 @@ button:hover {
   animation: titleFade 15s infinite;
 }
 
-.checkboxButton {
+.filterButton {
   padding: 2px;
   padding-right: 6px;
   margin: 3px;
   border-radius: 0.4rem;
 }
 
+.filterButtonGroup {
+  padding: 2px;
+  margin: 2px;
+}
+
 .selectorButton {
   padding: 3px;
   padding-right: 6px;
   padding-left: 6px;
-  margin: 1px;
+  margin: 2px;
   border-radius: 0.4rem;
+}
+
+.selectorButtonGroup {
+  margin: 4px;
 }
 
 @keyframes titleFade {
