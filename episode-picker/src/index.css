@@ -89,6 +89,32 @@ input[type="checkbox"] {
   font-weight: 500;
 }
 
+.container{
+  border-width: 1.5px;
+  border-radius: 1rem;
+  border-style: solid;
+  border-color: rgb(235, 150, 10);
+  background: linear-gradient(1deg, rgb(10, 20, 50, 0.4) 0%, rgb(20, 40, 100, 0.4));
+}
+
+#infoContainer{
+  display: grid;
+  align-self: center;
+  grid-template-columns: 1fr 1fr ;
+  grid-template-rows: 2fr;
+  margin-left: auto;
+  margin-right: auto;
+  min-width: fit-content;
+  max-width: 50%;
+  font-weight: 500;
+  text-align: left;
+}
+
+.infoItem{
+  padding: 2px;
+  margin: 1px;
+}
+
 .filterButton {
   padding: 2px;
   padding-right: 6px;
@@ -99,12 +125,6 @@ input[type="checkbox"] {
 #filterContainer {
   margin-top: 1rem;
   padding-top: 0.5rem;
-  border-width: 1.5px;
-
-  border-radius: 1rem;
-  border-style: solid;
-  border-color: rgb(235, 150, 10);
-  background: linear-gradient(1deg, rgb(10, 20, 50, 0.4) 0%, rgb(20, 40, 100, 0.4));
 }
 
 .filterButtonGroup {

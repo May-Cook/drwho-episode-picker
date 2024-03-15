@@ -87,13 +87,12 @@ export default function ResultsCard() {
       <a href={episode.link} className="episodeTitle">
         {episode.title}
       </a>
-      <p>
-        Series: {episode.series}, Episode: {episode.episode}
-      </p>
-      <p>
-        {episode.doctor}th Doctor, {episode.era} era
-      </p>
-
+      <div id="infoContainer" >
+        <p className="infoItem">Series: {episode.series} </p>
+        <p className="infoItem">Episode: {episode.episode} </p>
+        <p className="infoItem">Doctor: {episode.doctor}th</p>
+        <p className="infoItem">Era: {episode.era}</p>
+      </div>
       <button
         className="unselectable"
         onClick={() => {
@@ -121,8 +120,7 @@ export default function ResultsCard() {
       >
         Pick new episode
       </button>
-
-      <div id="filterContainer">
+      <div id="filterContainer" className="container">
         <span className="subtitle">Filter by Doctor: </span>
         <div className="filterButtonGroup">
           <button
