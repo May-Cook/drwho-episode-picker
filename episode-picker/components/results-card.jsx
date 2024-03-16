@@ -67,11 +67,31 @@ function VerifyEpisode(episode, checkboxState) {
   return validEpisode
 }
 
-export default function ResultsCard() {
-  const [episode, SetEpisode] = useState(
-    episodes[Math.floor(Math.random() * episodes.length)]
-  ) // initialise episode as a random episode
+function PickEpisode(episodes, checkboxState) {
+  //returns a randomly selected episode
+  if (
+    checkboxState.nine == true ||
+    checkboxState.ten == true ||
+    checkboxState.eleven == true ||
+    checkboxState.twelve == true ||
+    checkboxState.thirteen == true ||
+    checkboxState.fourteen == true ||
+    checkboxState.fifteen == true
+  ) {
+    //  if at least one checkbox is checked
+    let validEpisode = false
+    let episode = episodes[1]
+    while (!validEpisode) {
+      episode = episodes[Math.floor(Math.random() * episodes.length)] // pick a new episode at random
+      if (VerifyEpisode(episode, checkboxState)) {
+        validEpisode = true
+      }
+    }
+    return episode
+  }
+}
 
+export default function ResultsCard() {
   const [checkboxState, dispatch] = useReducer(CheckboxReducer, {
     nine: true,
     ten: true,
@@ -82,12 +102,15 @@ export default function ResultsCard() {
     fifteen: true,
   })
 
+  const [episode, SetEpisode] = useState(PickEpisode(episodes, checkboxState)) // initialise episode as a random episode
+
+
   return (
     <div className="results-card">
       <a href={episode.link} className="episodeTitle">
         {episode.title}
       </a>
-      <div id="infoContainer" >
+      <div id="infoContainer">
         <p className="infoItem">Series: {episode.series} </p>
         <p className="infoItem">Episode: {episode.episode} </p>
         <p className="infoItem">Doctor: {episode.doctor}th</p>
@@ -96,26 +119,7 @@ export default function ResultsCard() {
       <button
         className="unselectable"
         onClick={() => {
-          if (
-            checkboxState.nine == true ||
-            checkboxState.ten == true ||
-            checkboxState.eleven == true ||
-            checkboxState.twelve == true ||
-            checkboxState.thirteen == true ||
-            checkboxState.fourteen == true ||
-            checkboxState.fifteen == true
-          ) {
-            //  if at least one checkbox is checked
-            let validEpisode = false
-            let episode = episodes[1]
-            while (!validEpisode) {
-              episode = episodes[Math.floor(Math.random() * episodes.length)] // pick a new episode at random
-              if (VerifyEpisode(episode, checkboxState)) {
-                validEpisode = true
-              }
-            }
-            SetEpisode(episode)
-          }
+          SetEpisode(PickEpisode(episodes, checkboxState))
         }}
       >
         Pick new episode
