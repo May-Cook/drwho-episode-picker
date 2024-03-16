@@ -17,4 +17,4 @@ This project and the one above were created because I often struggle to select w
 
 ### _Allonsy!_
 
-![Tardis Image](https://github.com/May-Cook/drwho-episode-picker/blob/main/episode-picker/src/assets/tardisIcon.png?raw=true)
+![Screenshot of website](./readme-images/screenshot.jpg)
