@@ -215,25 +215,31 @@ input[type="checkbox"] {
   /* Animation intended to look like the TARDIS dematerialising*/
   0% {
     color: rgba(235, 150, 10, 1);
+    text-shadow: 0 0 40px rgba(235, 150, 10, 0)
   }
 
   40% {
     color: rgba(235, 150, 10, 1);
+    text-shadow: 0 0 40px rgba(235, 150, 10, 0)
   }
 
   70% {
     color: rgba(255, 150, 0, 0.05);
+    text-shadow: 0 0 40px rgba(235, 150, 10, 0.5)
   }
   80% {
     color: rgba(255, 150, 0, 0);
+    text-shadow: 0 0 40px rgba(235, 150, 10, 0)
   }
 
   90% {
     color: rgba(235, 150, 10, 1);
+    text-shadow: 0 0 20px rgba(235, 150, 10, 1)
   }
 
   100% {
     color: rgba(235, 150, 10, 1);
+    text-shadow: 0 0 40px rgba(235, 150, 10, 0)
   }
 }
 
