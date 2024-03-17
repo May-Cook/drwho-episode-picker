@@ -128,7 +128,9 @@ export default function ResultsCard() {
         </button>
       </div>
       <div id="filterContainer" className="container">
-        <span className="subtitle unselectable">Filter by Doctor: </span>
+        <div id="filterTitleContainer">
+          <span className="subtitle unselectable">Filter by Doctor: </span>
+        </div>
         <div className="filterButtonGroup">
           <button
             className="filterButton unselectable"

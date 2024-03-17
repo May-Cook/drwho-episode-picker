@@ -113,8 +113,23 @@ input[type="checkbox"] {
   font-weight: 500;
 }
 
+#filterTitleContainer {
+  border: rgba(235, 150, 10, 1) 2px solid;
+  border-radius: 1rem;
+  padding: 2px;
+  border-top: 0px;
+  border-right: 0;
+  border-top-left-radius: 0.5px;
+  border-bottom-right-radius: 0.5px;
+  background: linear-gradient(
+    1deg,
+    rgb(10, 20, 50, 0.2) 0%,
+    rgb(20, 40, 100, 0.2)
+  );
+}
+
 .container {
-  border-width: 1.5px;
+  border-width: 2px;
   border-radius: 1rem;
   border-top-left-radius: 0.5px;
   border-bottom-right-radius: 0.5px;
@@ -162,7 +177,11 @@ input[type="checkbox"] {
 
 #filterContainer {
   margin-top: 1rem;
-  padding-top: 0.5rem;
+  background: linear-gradient(
+    1deg,
+    rgb(10, 20, 50, 0.2) 0%,
+    rgb(20, 40, 100, 0.2)
+  );
 }
 
 .filterButtonGroup {
