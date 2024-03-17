@@ -104,12 +104,13 @@ export default function ResultsCard() {
 
   const [episode, SetEpisode] = useState(PickEpisode(episodes, checkboxState)) // initialise episode as a random episode
 
-
   return (
     <div className="results-card">
-      <a href={episode.link} className="episodeTitle">
-        {episode.title}
-      </a>
+      <div id="episodeTitleContainer" className="container">
+        <a href={episode.link} className="episodeTitle">
+          {episode.title}
+        </a>
+      </div>
       <div id="infoContainer">
         <p className="infoItem">Series: {episode.series} </p>
         <p className="infoItem">Episode: {episode.episode} </p>

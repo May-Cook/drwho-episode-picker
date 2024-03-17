@@ -72,35 +72,51 @@ input[type="checkbox"] {
 }
 
 .episodeTitle {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   font-family: "DrKabel";
+  vertical-align: middle;
+}
+
+#episodeTitleContainer {
+  border: rgba(235, 150, 10, 1) solid 2px;
+  border-radius: 1rem;
+  min-height: 3.2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5%;
 }
 
 .title {
   color: rgba(235, 150, 10, 1);
   font-family: "DrKabel";
 }
+
 .titleFade {
   animation: titleFade 15s infinite;
 }
 
-.subtitle{
+.subtitle {
   font-size: 1.3rem;
   font-weight: 500;
 }
 
-.container{
+.container {
   border-width: 1.5px;
   border-radius: 1rem;
   border-style: solid;
   border-color: rgb(235, 150, 10);
-  background: linear-gradient(1deg, rgb(10, 20, 50, 0.4) 0%, rgb(20, 40, 100, 0.4));
+  background: linear-gradient(
+    1deg,
+    rgb(10, 20, 50, 0.4) 0%,
+    rgb(20, 40, 100, 0.4)
+  );
 }
 
-#infoContainer{
+#infoContainer {
   display: grid;
   align-self: center;
-  grid-template-columns: 1fr 1fr ;
+  grid-template-columns: 1fr 1fr;
   grid-template-rows: 2fr;
   margin-left: auto;
   margin-right: auto;
@@ -110,7 +126,7 @@ input[type="checkbox"] {
   text-align: left;
 }
 
-.infoItem{
+.infoItem {
   padding: 2px;
   margin: 1px;
 }
