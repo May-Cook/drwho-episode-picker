@@ -8,6 +8,8 @@
 .results-card {
   border: 3px;
   border-radius: 1rem;
+  border-top-left-radius: 0.5px;
+  border-bottom-right-radius: 0.5px;
   border-style: solid;
   border-color: rgba(235, 150, 10, 1);
   background-color: rgba(235, 150, 10, 1);
