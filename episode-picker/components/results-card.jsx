@@ -126,7 +126,7 @@ export default function ResultsCard() {
         Pick new episode
       </button>
       <div id="filterContainer" className="container">
-        <span className="subtitle">Filter by Doctor: </span>
+        <span className="subtitle unselectable">Filter by Doctor: </span>
         <div className="filterButtonGroup">
           <button
             className="filterButton unselectable"
