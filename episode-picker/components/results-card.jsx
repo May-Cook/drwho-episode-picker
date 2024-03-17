@@ -106,25 +106,27 @@ export default function ResultsCard() {
 
   return (
     <div className="results-card">
-      <div id="episodeTitleContainer" className="container">
-        <a href={episode.link} className="episodeTitle">
-          {episode.title}
-        </a>
+      <div id="resultsContainer">
+        <div id="episodeTitleContainer" className="container">
+          <a href={episode.link} className="episodeTitle">
+            {episode.title}
+          </a>
+        </div>
+        <div id="infoContainer">
+          <p className="infoItem">Series: {episode.series} </p>
+          <p className="infoItem">Episode: {episode.episode} </p>
+          <p className="infoItem">Doctor: {episode.doctor}th</p>
+          <p className="infoItem">Era: {episode.era}</p>
+        </div>
+        <button
+          className="unselectable"
+          onClick={() => {
+            SetEpisode(PickEpisode(episodes, checkboxState))
+          }}
+        >
+          Pick new episode
+        </button>
       </div>
-      <div id="infoContainer">
-        <p className="infoItem">Series: {episode.series} </p>
-        <p className="infoItem">Episode: {episode.episode} </p>
-        <p className="infoItem">Doctor: {episode.doctor}th</p>
-        <p className="infoItem">Era: {episode.era}</p>
-      </div>
-      <button
-        className="unselectable"
-        onClick={() => {
-          SetEpisode(PickEpisode(episodes, checkboxState))
-        }}
-      >
-        Pick new episode
-      </button>
       <div id="filterContainer" className="container">
         <span className="subtitle unselectable">Filter by Doctor: </span>
         <div className="filterButtonGroup">
