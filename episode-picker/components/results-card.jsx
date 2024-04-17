@@ -78,7 +78,7 @@ function PickEpisode(episodes, checkboxState) {
     checkboxState.fourteen == true ||
     checkboxState.fifteen == true
   ) {
-    //  if at least one checkbox is checked
+    //  if at least one checkbox is checked select a random valid episode
     let validEpisode = false
     let episode = episodes[1]
     while (!validEpisode) {
@@ -88,6 +88,15 @@ function PickEpisode(episodes, checkboxState) {
       }
     }
     return episode
+  } else { // if no checkboxes are checked return episode with no information 
+    return {
+      series: 0,
+      episode: 0,
+      title: "No Episodes Selected",
+      doctor: 0,
+      era: "None",
+      link: "https://www.bbc.co.uk/iplayer/group/m001rzf7",
+    }
   }
 }
 
