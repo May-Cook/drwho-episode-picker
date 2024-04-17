@@ -67,8 +67,8 @@ function VerifyEpisode(episode, checkboxState) {
   return validEpisode
 }
 
-function PickEpisode(episodes, checkboxState) {
-  //returns a randomly selected episode
+function VerifyConditions(checkboxState) {
+  // returns true if at least one valid episode exists
   if (
     checkboxState.nine == true ||
     checkboxState.ten == true ||
@@ -78,7 +78,16 @@ function PickEpisode(episodes, checkboxState) {
     checkboxState.fourteen == true ||
     checkboxState.fifteen == true
   ) {
-    //  if at least one checkbox is checked select a random valid episode
+    return true
+  } else {
+    return false
+  }
+}
+
+function PickEpisode(episodes, checkboxState) {
+  //returns a randomly selected episode
+  if (VerifyConditions(checkboxState)) {
+    //  if a valid episode exists select a random valid episode
     let validEpisode = false
     let episode = episodes[1]
     while (!validEpisode) {
@@ -88,7 +97,8 @@ function PickEpisode(episodes, checkboxState) {
       }
     }
     return episode
-  } else { // if no checkboxes are checked return episode with no information 
+  } else {
+    // if no valid episode exists return episode with no information
     return {
       series: 0,
       episode: 0,
