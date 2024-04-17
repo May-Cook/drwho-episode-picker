@@ -140,7 +140,13 @@ export default function ResultsCard() {
         <button
           className="unselectable"
           onClick={() => {
-            SetEpisode(PickEpisode(episodes, checkboxState))
+            if (VerifyConditions(checkboxState)) {
+              SetEpisode(PickEpisode(episodes, checkboxState))
+            } else {
+              alert(
+                "Sorry, there are no episodes that meet the criteria you have selected."
+              )
+            }
           }}
         >
           Pick new episode
