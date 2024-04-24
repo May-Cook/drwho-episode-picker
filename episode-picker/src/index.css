@@ -3,8 +3,8 @@
   --clr-blue: hsl(210, 100%, 30%);
   --clr-darkBlue: hsl(210, 100%, 20%);
   --clr-darkestBlue: hsl(210, 100%, 5%);
-  --clr-orange: hsl(30, 100%, 60%);
-  --clr-transparentOrange: hsla(30, 100%, 60%, 0.5);
+  --clr-grey: hsl(210, 15%, 60%);
+  --clr-transparentGrey: hsla(210, 15%, 60%, 0.5);
   --grad-title: linear-gradient(
     0deg,
     rgba(10, 20, 50, 0.4) 0%,
@@ -37,9 +37,8 @@ a {
   text-decoration: inherit;
 }
 a:hover {
-  color: var(--clr-orange);
-  text-shadow: 0 0 15px var(--clr-orange),
-    0 0 20px var(--clr-transparentOrange);
+  color: var(--clr-grey);
+  text-shadow: 0 0 15px var(--clr-grey), 0 0 20px var(--clr-transparentGrey);
 }
 
 body {
@@ -56,10 +55,10 @@ h1 {
 }
 
 button {
-  color: var(--clr-orange);
+  color: var(--clr-grey);
   border-radius: 10px;
   border: 1.5px solid transparent;
-  border-color: var(--clr-transparentOrange);
+  border-color: var(--clr-transparentGrey);
   padding: 0.6em 1.2em;
   margin: 6px;
   font-size: 1em;
@@ -75,17 +74,17 @@ button {
 }
 
 button:hover {
-  background-color: var(--clr-transparentOrange);
-  border-color: var(--clr-orange);
-  box-shadow: 0px 0px 4px 1px var(--clr-orange);
+  background-color: var(--clr-transparentGrey);
+  border-color: var(--clr-grey);
+  box-shadow: 0px 0px 4px 1px var(--clr-grey);
 }
 
 input[type="checkbox"] {
-  accent-color: var(--clr-orange);
+  accent-color: var(--clr-grey);
 }
 
 #resultsContainer {
-  border: var(--clr-orange) solid 2px;
+  border: var(--clr-grey) solid 2px;
   border-radius: 1rem;
   border-bottom-right-radius: 0.5px;
   border-top-left-radius: 0.5px;
@@ -99,7 +98,7 @@ input[type="checkbox"] {
 }
 
 #episodeTitleContainer {
-  border: var(--clr-orange) solid 2px;
+  border: var(--clr-grey) solid 2px;
   min-height: 3.2rem;
   display: flex;
   justify-content: center;
@@ -109,7 +108,7 @@ input[type="checkbox"] {
 }
 
 .title {
-  color: var(--clr-orange);
+  color: var(--clr-grey);
   font-family: "DrKabel";
 }
 
@@ -123,7 +122,7 @@ input[type="checkbox"] {
 }
 
 #filterTitleContainer {
-  border: var(--clr-orange) 2px solid;
+  border: var(--clr-grey) 2px solid;
   border-radius: 1rem;
   padding: 2px;
   border-top: 0px;
@@ -139,7 +138,7 @@ input[type="checkbox"] {
   border-top-left-radius: 0.5px;
   border-bottom-right-radius: 0.5px;
   border-style: solid;
-  border-color: var(--clr-orange);
+  border-color: var(--clr-grey);
   background: var(--grad-title);
 }
 
@@ -161,7 +160,7 @@ input[type="checkbox"] {
 .infoItem {
   padding: 2px;
   margin: 1px;
-  border: 2px var(--clr-orange) solid;
+  border: 2px var(--clr-grey) solid;
   border-bottom-left-radius: 0.5rem;
   border-bottom-right-radius: 0.5rem;
   border-top: 0px;
@@ -220,7 +219,7 @@ input[type="checkbox"] {
 
   70% {
     opacity: 0.05;
-    text-shadow: 0 0 40px var(--clr-transparentOrange);
+    text-shadow: 0 0 40px var(--clr-transparentGrey);
   }
   80% {
     opacity: 0;
@@ -229,7 +228,7 @@ input[type="checkbox"] {
 
   90% {
     opacity: 1;
-    text-shadow: 0 0 20px var(--clr-orange);
+    text-shadow: 0 0 20px var(--clr-grey);
   }
 
   100% {
