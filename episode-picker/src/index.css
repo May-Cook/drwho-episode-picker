@@ -1,4 +1,16 @@
 :root {
+  --clr-lightBlue: hsl(210, 100%, 40%);
+  --clr-blue: hsl(210, 100%, 30%);
+  --clr-darkBlue: hsl(210, 100%, 20%);
+  --clr-darkestBlue: hsl(210, 100%, 5%);
+  --clr-orange: hsl(30, 100%, 60%);
+  --clr-transparentOrange: hsla(30, 100%, 60%, 0.5);
+  --grad-title: linear-gradient(
+    0deg,
+    rgba(10, 20, 50, 0.4) 0%,
+    rgba(20, 40, 100, 0.4) 100%
+  );
+
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
@@ -7,11 +19,9 @@
   color: rgba(255, 255, 255, 0.87);
   background: linear-gradient(
     180deg,
-    /* rgb(0, 70, 160) 1%, */ rgb(0, 60, 150) 1%,
-    rgb(0, 50, 125),
-    50%,
-    rgb(0, 30, 75) 80%,
-    rgb(0, 20, 50) 100%
+    var(--clr-blue) -20%,
+    var(--clr-darkBlue) 30%,
+    var(--clr-darkestBlue) 100%
   );
 
   font-synthesis: none;
@@ -23,12 +33,13 @@
 
 a {
   font-weight: 500;
-  color: rgb(10 120 230);
+  color: var(--clr-lightBlue);
   text-decoration: inherit;
 }
 a:hover {
-  color: rgb(10 140 245);
-  text-shadow: 0 0 15px rgba(10, 140, 255, 0.8), 0 0 20px rgba(10, 140, 245, 0.5);
+  color: var(--clr-orange);
+  text-shadow: 0 0 15px var(--clr-orange),
+    0 0 20px var(--clr-transparentOrange);
 }
 
 body {
@@ -45,10 +56,10 @@ h1 {
 }
 
 button {
-  color: rgba(225, 140, 5, 1);
+  color: var(--clr-orange);
   border-radius: 10px;
   border: 1.5px solid transparent;
-  border-color: rgba(235, 150, 10, 0.5);
+  border-color: var(--clr-transparentOrange);
   padding: 0.6em 1.2em;
   margin: 6px;
   font-size: 1em;
@@ -56,33 +67,29 @@ button {
   font-family: inherit;
   background: linear-gradient(
     0deg,
-    rgba(0, 65, 160, 1) 0%,
-    rgba(0, 55, 140, 1) 100%
+    var(--clr-blue) -30%,
+    var(--clr-darkBlue) 110%
   );
   cursor: pointer;
   transition: border-color 0.15s;
 }
 
 button:hover {
-  background-color: rgba(235, 200, 0, 0.2);
-  border-color: rgba(235, 150, 10, 1);
-  box-shadow: 0px 0px 4px 1px rgba(235, 150, 10, 1);
+  background-color: var(--clr-transparentOrange);
+  border-color: var(--clr-orange);
+  box-shadow: 0px 0px 4px 1px var(--clr-orange);
 }
 
 input[type="checkbox"] {
-  accent-color: rgba(235, 150, 10, 1);
+  accent-color: var(--clr-orange);
 }
 
-#resultsContainer{
-  border: rgba(235, 150, 10, 1) solid 2px;
+#resultsContainer {
+  border: var(--clr-orange) solid 2px;
   border-radius: 1rem;
   border-bottom-right-radius: 0.5px;
   border-top-left-radius: 0.5px;
-  background: linear-gradient(
-    1deg,
-    rgb(10, 20, 50, 0.2) 0%,
-    rgb(20, 40, 100, 0.2)
-  );
+  background: var(--grad-title);
 }
 
 .episodeTitle {
@@ -92,7 +99,7 @@ input[type="checkbox"] {
 }
 
 #episodeTitleContainer {
-  border: rgba(235, 150, 10, 1) solid 2px;
+  border: var(--clr-orange) solid 2px;
   min-height: 3.2rem;
   display: flex;
   justify-content: center;
@@ -102,7 +109,7 @@ input[type="checkbox"] {
 }
 
 .title {
-  color: rgba(235, 150, 10, 1);
+  color: var(--clr-orange);
   font-family: "DrKabel";
 }
 
@@ -116,18 +123,14 @@ input[type="checkbox"] {
 }
 
 #filterTitleContainer {
-  border: rgba(235, 150, 10, 1) 2px solid;
+  border: var(--clr-orange) 2px solid;
   border-radius: 1rem;
   padding: 2px;
   border-top: 0px;
   border-right: 0;
   border-top-left-radius: 0.5px;
   border-bottom-right-radius: 0.5px;
-  background: linear-gradient(
-    1deg,
-    rgb(10, 20, 50, 0.2) 0%,
-    rgb(20, 40, 100, 0.2)
-  );
+  background: var(--grad-title);
 }
 
 .container {
@@ -136,13 +139,8 @@ input[type="checkbox"] {
   border-top-left-radius: 0.5px;
   border-bottom-right-radius: 0.5px;
   border-style: solid;
-  border-color: rgb(235, 150, 10);
-  background: linear-gradient(
-    1deg,
-    rgb(10, 20, 50, 0.4) 0%,
-    rgb(20, 40, 100, 0.4)
-  );
-  
+  border-color: var(--clr-orange);
+  background: var(--grad-title);
 }
 
 #infoContainer {
@@ -163,7 +161,7 @@ input[type="checkbox"] {
 .infoItem {
   padding: 2px;
   margin: 1px;
-  border: 2px rgb(235, 150, 10) solid;
+  border: 2px var(--clr-orange) solid;
   border-bottom-left-radius: 0.5rem;
   border-bottom-right-radius: 0.5rem;
   border-top: 0px;
@@ -180,11 +178,7 @@ input[type="checkbox"] {
 
 #filterContainer {
   margin-top: 1rem;
-  background: linear-gradient(
-    1deg,
-    rgb(10, 20, 50, 0.2) 0%,
-    rgb(20, 40, 100, 0.2)
-  );
+  background: var(--grad-title);
 }
 
 .filterButtonGroup {
@@ -215,32 +209,32 @@ input[type="checkbox"] {
 @keyframes titleFade {
   /* Animation intended to look like the TARDIS dematerialising*/
   0% {
-    color: rgba(235, 150, 10, 1);
-    text-shadow: 0 0 40px rgba(235, 150, 10, 0)
+    opacity: 1;
+    text-shadow: 0 0 40px rgba(0, 0, 0, 0);
   }
 
   40% {
-    color: rgba(235, 150, 10, 1);
-    text-shadow: 0 0 40px rgba(235, 150, 10, 0)
+    opacity: 1;
+    text-shadow: 0 0 40px rgba(0, 0, 0, 0);
   }
 
   70% {
-    color: rgba(255, 150, 0, 0.05);
-    text-shadow: 0 0 40px rgba(235, 150, 10, 0.5)
+    opacity: 0.05;
+    text-shadow: 0 0 40px var(--clr-transparentOrange);
   }
   80% {
-    color: rgba(255, 150, 0, 0);
-    text-shadow: 0 0 40px rgba(235, 150, 10, 0)
+    opacity: 0;
+    text-shadow: 0 0 40px rgba(0, 0, 0, 0);
   }
 
   90% {
-    color: rgba(235, 150, 10, 1);
-    text-shadow: 0 0 20px rgba(235, 150, 10, 1)
+    opacity: 1;
+    text-shadow: 0 0 20px var(--clr-orange);
   }
 
   100% {
-    color: rgba(235, 150, 10, 1);
-    text-shadow: 0 0 40px rgba(235, 150, 10, 0)
+    opacity: 1;
+    text-shadow: 0 0 40px rgba(0, 0, 0, 0);
   }
 }
 
