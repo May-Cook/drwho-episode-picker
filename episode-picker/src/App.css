@@ -11,17 +11,17 @@
   border-top-left-radius: 0.5px;
   border-bottom-right-radius: 0.5px;
   border-style: solid;
-  border-color: var(--clr-orange);
-  background-color: var(--clr-orange);
+  border-color: var(--clr-grey);
+  background-color: var(--clr-grey);
 
   background: linear-gradient(
     180deg,
     rgba(245, 160, 0, 0.2) 10%,
     rgba(225, 140, 0, 0.2) 100%
   );
-  color: var(--clr-orange);
+  color: var(--clr-grey);
   margin: 10%;
   padding: 1rem;
 
-  box-shadow: 0px 0px 50px 3px var(--clr-transparentOrange);
+  box-shadow: 0px 0px 50px 3px var(--clr-transparentGrey);
 }
