@@ -14,11 +14,7 @@
   border-color: var(--clr-grey);
   background-color: var(--clr-grey);
 
-  background: linear-gradient(
-    180deg,
-    rgba(245, 160, 0, 0.2) 10%,
-    rgba(225, 140, 0, 0.2) 100%
-  );
+  background: var(--clr-transparentGrey);
   color: var(--clr-grey);
   margin: 10%;
   padding: 1rem;
