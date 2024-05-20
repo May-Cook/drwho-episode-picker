@@ -3,6 +3,8 @@
   --clr-blue: hsl(210, 100%, 30%);
   --clr-darkBlue: hsl(210, 100%, 20%);
   --clr-darkestBlue: hsl(210, 100%, 5%);
+  --clr-yellow: hsl(50, 100%, 60%);
+  --clr-transparentYellow: hsla(50, 100%, 60%, 0.5);
   --clr-grey: hsl(210, 15%, 60%);
   --clr-transparentGrey: hsla(210, 15%, 60%, 0.5);
   --grad-title: linear-gradient(
@@ -74,9 +76,10 @@ button {
 }
 
 button:hover {
-  background-color: var(--clr-transparentGrey);
-  border-color: var(--clr-grey);
-  box-shadow: 0px 0px 4px 1px var(--clr-grey);
+  background-color: var(--clr-transparentYellow);
+  color: var(--clr-yellow);
+  border-color: var(--clr-yellow);
+  box-shadow: 0px 0px 4px 1px var(--clr-transparentYellow);
 }
 
 input[type="checkbox"] {
