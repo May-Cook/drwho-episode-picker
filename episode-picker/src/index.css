@@ -76,7 +76,6 @@ button {
 }
 
 button:hover {
-  background-color: var(--clr-transparentYellow);
   color: var(--clr-yellow);
   border-color: var(--clr-yellow);
   box-shadow: 0px 0px 4px 1px var(--clr-transparentYellow);
