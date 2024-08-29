@@ -1454,6 +1454,47 @@
         "doctor": 15,
         "era": "2023+",
         "link": "https://www.bbc.co.uk/iplayer/episode/m001zh0j/doctor-who-season-1-3-boom"
+    },
+    {
+        "series": 14,
+        "episode": 8,
+        "title": "73 Yards",
+        "doctor": 15,
+        "era": "2023+",
+        "link": "https://www.bbc.co.uk/iplayer/episode/m001zpzs/doctor-who-season-1-4-73-yards"
+    },
+    {
+        "series": 14,
+        "episode": 9,
+        "title": "Dot and Bubble",
+        "doctor": 15,
+        "era": "2023+",
+        "link": "https://www.bbc.co.uk/iplayer/episode/m001zxwj/doctor-who-season-1-5-dot-and-bubble"
+    },
+    {
+        "series": 14,
+        "episode": 10,
+        "title": "Rogue",
+        "doctor": 15,
+        "era": "2023+",
+        "link": "https://www.bbc.co.uk/iplayer/episode/m00204dk/doctor-who-season-1-6-rogue"
+    },
+    {
+        "series": 14,
+        "episode": 11,
+        "title": "The Legend of Ruby Sunday",
+        "doctor": 15,
+        "era": "2023+",
+        "link": "https://www.bbc.co.uk/iplayer/episode/m0020ccf/doctor-who-season-1-7-the-legend-of-ruby-sunday"
+    },
+    {
+        "series": 14,
+        "episode": 12,
+        "title": "Empire of Death",
+        "doctor": 15,
+        "era": "2023+",
+        "link": "https://www.bbc.co.uk/iplayer/episode/m0020krd/doctor-who-season-1-8-empire-of-death"
     }
+
 
 ]
