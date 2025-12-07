@@ -1494,6 +1494,78 @@
         "doctor": 15,
         "era": "2023+",
         "link": "https://www.bbc.co.uk/iplayer/episode/m0020krd"
+    },
+    {
+        "series": 14,
+        "episode": 13,
+        "title": "Joy to the World",
+        "doctor": 15,
+        "era": "2023+",
+        "link": "https://www.bbc.co.uk/iplayer/episode/m0026d24"
+    },
+    {
+        "series": 15,
+        "episode": 1,
+        "title": "The Robot Revolution",
+        "doctor": 15,
+        "era": "2023+",
+        "link": "https://www.bbc.co.uk/iplayer/episode/m0029db8"
+    },
+    {
+        "series": 15,
+        "episode": 2,
+        "title": "Lux",
+        "doctor": 15,
+        "era": "2023+",
+        "link": "https://www.bbc.co.uk/iplayer/episode/m002b8rr"
+    },
+    {
+        "series": 15,
+        "episode": 3,
+        "title": "The Well",
+        "doctor": 15,
+        "era": "2023+",
+        "link": "https://www.bbc.co.uk/iplayer/episode/m002bl53"
+    },
+    {
+        "series": 15,
+        "episode": 4,
+        "title": "Lucky Day",
+        "doctor": 15,
+        "era": "2023+",
+        "link": "https://www.bbc.co.uk/iplayer/episode/m002bw41"
+    },
+    {
+        "series": 15,
+        "episode": 5,
+        "title": "The Story & The Engine",
+        "doctor": 15,
+        "era": "2023+",
+        "link": "https://www.bbc.co.uk/iplayer/episode/m002c5lx"
+    },
+    {
+        "series": 15,
+        "episode": 6,
+        "title": "The Interstellar Song Contest",
+        "doctor": 15,
+        "era": "2023+",
+        "link": "https://www.bbc.co.uk/iplayer/episode/m002cgzl"
+    },
+    {
+        "series": 15,
+        "episode": 7,
+        "title": "Wish World",
+        "doctor": 15,
+        "era": "2023+",
+        "link": "https://www.bbc.co.uk/iplayer/episode/m002cswr"
+    },
+    {
+        "series": 15,
+        "episode": 8,
+        "title": "The Reality War",
+        "doctor": 15,
+        "era": "2023+",
+        "link": "https://www.bbc.co.uk/iplayer/episode/m002d3lr"
     }
 
 
