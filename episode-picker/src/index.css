@@ -33,6 +33,8 @@
   -webkit-text-size-adjust: 100%;
 }
 
+@import "tailwindcss";
+
 a {
   font-weight: 500;
   color: var(--clr-lightBlue);
