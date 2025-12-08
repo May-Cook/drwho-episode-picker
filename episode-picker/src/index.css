@@ -2,10 +2,10 @@
   --clr-lightBlue: hsl(210, 100%, 40%);
   --clr-blue: hsl(210, 100%, 30%);
   --clr-darkBlue: hsl(210, 100%, 20%);
-  --clr-darkestBlue: hsl(210, 100%, 5%);
+  --clr-darkestBlue: hsl(210, 100%, 10%);
   --clr-yellow: hsl(50, 100%, 60%);
   --clr-transparentYellow: hsla(50, 100%, 60%, 0.5);
-  --clr-grey: hsl(210, 15%, 60%);
+  --clr-grey: hsl(210, 15%, 75%);
   --clr-transparentGrey: hsla(210, 15%, 60%, 0.5);
   --grad-title: linear-gradient(
     0deg,
