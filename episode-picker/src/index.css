@@ -32,9 +32,7 @@
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
 }
-
 @import "tailwindcss";
-
 a {
   font-weight: 500;
   color: var(--clr-lightBlue);
@@ -136,7 +134,7 @@ input[type="checkbox"] {
   background: var(--grad-title);
 }
 
-.container {
+.containerCustom {
   border-width: 2px;
   border-radius: 1rem;
   border-top-left-radius: 0.5px;

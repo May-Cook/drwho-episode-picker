@@ -126,7 +126,7 @@ export default function ResultsCard() {
   return (
     <div className="results-card">
       <div id="resultsContainer">
-        <div id="episodeTitleContainer" className="container">
+        <div id="episodeTitleContainer" className="containerCustom">
           <a href={episode.link} className="episodeTitle">
             {episode.title}
           </a>
@@ -152,7 +152,7 @@ export default function ResultsCard() {
           Pick new episode
         </button>
       </div>
-      <div id="filterContainer" className="container">
+      <div id="filterContainer" className="containerCustom">
         <div id="filterTitleContainer">
           <span className="subtitle unselectable">Filter by Doctor: </span>
         </div>
