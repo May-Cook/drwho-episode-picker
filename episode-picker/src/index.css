@@ -39,8 +39,8 @@ a {
   text-decoration: inherit;
 }
 a:hover {
-  color: var(--clr-grey);
-  text-shadow: 0 0 15px var(--clr-grey), 0 0 20px var(--clr-transparentGrey);
+  color: var(--clr-yellow);
+  text-shadow: 0 0 15px var(--clr-yellow), 0 0 20px var(--clr-transparentGrey);
 }
 
 body {
